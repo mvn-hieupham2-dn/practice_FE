@@ -1,0 +1,60 @@
+/* basic selector  */
+/* class */
+.content{
+    background-color: blueviolet;
+}
+/* element */
+#title{
+   color: red ;
+}
+/* child selector */
+.parent .child {
+    color: blue;
+}
+.parent .child:first-child{
+    color: #ff0000;
+}
+.parent >.child:nth-child(3){
+    color: yellow;
+}
+/* attribute selector */
+a[target] {
+    background-color: yellow;
+  }
+/* Universal Selector */
+*{
+    text-align: center;
+    font-size: 18px;
+}
+.form-group .form-control {
+    text-align: left;
+    padding: 3px 10px;
+}
+/* pseudo-class */ 
+.form-group .btn-primary{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 5px 30px;
+    border-radius: 25px;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color:grey;
+    color: white;
+}
+
+/* pseudo-element */
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.before::before{
+    content: "This is pseudo-element before - ";
+}
+.before::after {
+    content: "- and this is pseudo-elment after";
+    color: brown;
+}
