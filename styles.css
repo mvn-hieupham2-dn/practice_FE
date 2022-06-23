@@ -1,0 +1,95 @@
+/* basic selector  */
+/* class */
+.content{
+    background-color: blueviolet;
+}
+/* element */
+#title{
+   color: red ;
+}
+/* child selector */
+.parent .child {
+    color: blue;
+}
+.parent .child:first-child{
+    color: #ff0000;
+}
+.parent >.child:nth-child(3){
+    color: yellow;
+}
+/* attribute selector */
+a[target] {
+    background-color: yellow;
+  }
+  /* !.important */
+  .important{
+    text-align: left !important;
+}
+/* Universal Selector */
+*{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-group .form-control {
+    text-align: left;
+    padding: 3px 10px;
+}
+.form-group .form-control:focus {
+    border: 1px solid red;
+}
+
+/* pseudo-class */ 
+.form-group .btn-primary{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 5px 30px;
+    border-radius: 25px;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color:grey;
+    color: white;
+}
+
+/* pseudo-element */
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.before::before{
+    content: "This is pseudo-element before - ";
+    background-color: lightblue;
+}
+.before::after {
+    content: "- and this is pseudo-elment after";
+    color: brown;
+    background-color: lightblue;
+
+}
+.bg-img{
+    background-image: center center no-repeat cover;
+}
+.opacity{
+    opacity: 20%;
+}
+.visibility{
+    visibility:hidden;
+}
+/* specificity */
+#spe
+{
+    color: green;
+}
+.spe{
+    color: black;
+}
+p{
+    color: blue;
+}
+.text-transform{
+    text-transform: uppercase;
+}
